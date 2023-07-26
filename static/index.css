@@ -1,0 +1,84 @@
+h1,
+p,
+input {
+  font-family: "Lato", sans-serif;
+}
+
+#speechContainer {
+  margin: 100px;
+}
+
+#submitButton {
+  background-color: #0191fe;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 30px;
+  /* margin-top: 20px; */
+}
+
+#submitButton:hover {
+  cursor: pointer;
+}
+
+#speechTranscriptContainer {
+  margin-top: 20px;
+  color: white;
+}
+
+#speechText {
+  font-size: 18px;
+  width: 500px;
+}
+
+.text-bg {
+  text-align: center;
+}
+.text-bg span {
+  font-size: 70px;
+  line-height: 70px;
+  color: #0fc9da;
+  text-transform: uppercase;
+}
+.text-bg h1 {
+  color: #fff;
+  font-size: 90px;
+
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.text-bg p {
+  font-size: 17px;
+  display: block;
+  color: #fff;
+  line-height: 30px;
+  padding-bottom: 30px;
+
+  font-weight: 400;
+}
+
+.head {
+  text-align: center;
+  color: #fff;
+}
+.btn {
+  align-items: center;
+}
+.container {
+  background-color: aqua;
+  background-image: url("background.gif");
+  /*margin: auto;*/
+}
+.upload {
+  color: white;
+}
+.file {
+  display: block;
+  /* position: relative; */
+  width: 200px;
+  height: 50px;
+  color: #fff;
+
+  /* padding: 20px; */
+  align-items: center;
+}

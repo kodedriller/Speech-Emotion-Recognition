@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Speech Recognition in Python</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='../static/index.css') }}"
+    />
+  </head>
+  <body class="container">
+    <center>
+      <div id="speechContainer">
+        <div class="text-bg">
+          <span>Speech</span>
+          <h1>Emotion Recognition</h1>
+        </div>
+        <form method="post" enctype="multipart/form-data" class="btn">
+          <input type="file" name="file" class="file" />
+          <br />
+          <input type="submit" id="submitButton" value="Detect" />
+        </form>
+
+        {% if ans != "" %}
+        <div id="speechTranscriptContainer">
+          <h1>Prediction</h1>
+          <p id="speechText">{{ ans }}</p>
+        </div>
+        {% endif %}
+      </div>
+    </center>
+  </body>
+</html>
